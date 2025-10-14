@@ -1,6 +1,12 @@
 /* Smooth scroll for in-page anchors */
 html {
   scroll-behavior: smooth;
+
+    /* Added: prevent white overscroll flash (top/bottom) */
+  overscroll-behavior-y: contain;
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
+  background-attachment: fixed;
 }
 
 /* ===== Base ===== */
